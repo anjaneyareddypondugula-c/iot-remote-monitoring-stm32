@@ -12,19 +12,6 @@ telemetry securely to AWS IoT Core via MQTT.
 - **Tools:** STM32CubeIDE, ST-Link, JTAG
 - **Standards:** ISO 26262, MISRA C
 
-## 📁 Project Structure
-/src
-main.c           - Application entry point
-mqtt_client.c    - MQTT publish/subscribe handler
-sensor_task.c    - FreeRTOS sensor acquisition task
-wifi_driver.c    - Wi-Fi connectivity driver
-/include
-mqtt_client.h
-sensor_task.h
-wifi_driver.h
-/docs
-architecture.md
-README.md
 ## ⚙️ Key Features
 - Deployed across 3 prototype devices with 100% uptime over 30-day test
 - Sensor polling latency reduced by 15% through FreeRTOS task prioritization
@@ -40,6 +27,12 @@ README.md
 | Cloud Delivery Time | < 200ms end-to-end |
 | Memory Optimization | 25% footprint reduction |
 | Test Scenarios Passed | 30+ with zero failures |
+
+## 📁 Project Structure
+- src/main.c - Application entry point
+- src/mqtt_client.c - MQTT publish/subscribe handler
+- src/sensor_task.c - FreeRTOS sensor acquisition task
+- src/wifi_driver.c - Wi-Fi connectivity driver
 
 ## ⚠️ Note
 Sanitized demo version for portfolio purposes.
